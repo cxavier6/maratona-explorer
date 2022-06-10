@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +7,17 @@
 	<title>Oráculo</title>
 </head>
 <body>
-	<main class="container">
+	<div class="container">
 		<img src="https://gist.githubusercontent.com/maykbrito/0acdf4ce919838ffed50915a31fc5b23/raw/6f4dd01ec3116428ec4c99255944cb9ac7927590/cristal-ball.svg" alt="Imagem de uma bola de cristal">
 		<h1>Vou revelar seu destino!</h1>
 		<p>Clique em fazer pergunta para que seu destino seja revelado.</p>
-		<input type="text" placeholder="Digite sua pergunta">
-		<button>Fazer pergunta</button>
-	</main>
+		<input id="inputPergunta" type="text" placeholder="Digite sua pergunta">
+		<button id="btn" onclick="fazerPergunta()">Fazer Pergunta</button>
+  
+		<h3 id="resposta"></h3>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>  
+	<script src="./index.js"></script>
 </body>
 </html>
